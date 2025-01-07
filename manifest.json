@@ -1,0 +1,28 @@
+
+{
+    "manifest_version": 3,
+    "name": "Real Estate CAP Rate Calculator",
+    "version": "1.0",
+    "description": "Calculate CAP rate for real estate listings on Zillow and Redfin.",
+    "permissions": [
+      "activeTab",
+      "scripting"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.zillow.com/*", "*://*.redfin.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+      }
+    }
+  } 

@@ -1,0 +1,22 @@
+/**
+ * CAP Rate Calculator Popup Stylesheet
+ * 
+ * This stylesheet defines the styles for the CAP Rate Calculator popup.
+ * It includes styles for the body and the div element that displays the CAP rate.
+ * 
+ * Styles:
+ * - body: Sets the font family to Arial, sans-serif, and adds padding around the content.
+ * - #capRate: Sets the font size to 18px and adds a margin at the top.
+ */
+
+/* Styles for the body element */
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+  }
+  
+  #capRate {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
